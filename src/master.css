@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    --amarelo: #FFCF00
+}
+
+@font-face {
+    font-family: Cera;
+    src: url("assets/fonts/Cera\ Pro\ Medium.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Cera;
+    src: url("assets/fonts/Cera\ Pro\ Bold.otf");
+    font-weight: bold;
+}
