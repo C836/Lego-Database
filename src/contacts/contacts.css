@@ -28,7 +28,7 @@
 }
 
 .contacts .wrapper {
-    width: 1150px;
+    width: 85%;
     height: 1050px;
 }
 
@@ -48,7 +48,7 @@
     text-align: center;
     display: inline-block;
     width: 370px;
-    margin: 20px;
+    margin: 10px 5%;
 }
 
 .card .icon{

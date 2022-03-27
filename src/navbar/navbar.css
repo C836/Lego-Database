@@ -14,7 +14,7 @@ nav a{
     letter-spacing: 0.5px;
 }
 
-nav img{
+nav .navLogo{
     float: left;
     width: 55px;
     margin: 10px 30px 10px 30px;
@@ -23,4 +23,32 @@ nav img{
 nav #right{
     float: right;
     margin-right: 30px;
+}
+
+nav .search{
+    outline: none;
+    background: white;
+    float: left;
+    margin-top: 15px;
+    border: none;
+    padding: 10px 15px;
+    background-size: 20px;
+    border-radius: 25px;
+}
+
+nav .searchButton{
+    float: left;
+    background-color: white;
+    margin-top: 15px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+nav .searchButton img{
+    width: 50%;
+    margin-top: 10px;
 }
