@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./src/assets/images/logo.svg">
+    <link rel="icon" href="./src/assets/images/svg/logo.svg">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="./src/navbar/search.js" defer></script>
+    <script src="./src/navbar/navbar.js" defer></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -28,8 +29,8 @@
 
     <div class="Border borderUp"></div>
 
-    <nav> 
-        <img class="navLogo" src="./src/assets/images/logo.svg">
+    <nav id="navbar"> 
+        <img class="navLogo" src="./src/assets/images/svg/logo.svg">
         <a>
             TEXTO
         </a>
@@ -39,11 +40,11 @@
         <a>
             TEXTO
         </a>
-        <div id="right">
+        <div id="right" class="right">
             <input type="text" id="SearchTxt" class="search" value placeholder="Search">
 
-            <div class="searchButton" id="SearchBtn"  value="Search" onclick="doSearch(document.getElementById('SearchTxt').value)">
-                <img src="./src/assets/images/search.svg">
+            <div class="searchButton" id="SearchBtn" value="Search" onclick="doSearch(document.getElementById('SearchTxt').value)">
+                <img src="./src/assets/images/svg/search.svg">
             </div>
 
             <a>
@@ -53,6 +54,8 @@
                 CONTATO
             </a>
         </div>
+
+        <img class="openMenu" id="openMenu" src="./src/assets/images/svg/menu.svg" width="43px">
     </nav>
 
     <section id="main">
@@ -68,7 +71,7 @@
     </section>
 
     <section class="description">
-        <img src="./src/assets/images/logo.svg" width="150px">
+        <img src="./src/assets/images/svg/logo.svg" width="150px">
 
         <p>
             LEGO é um dos brinquedos mais populares e mais vendidos de todos os tempos e é um nome familiar em todo o mundo. É divertido para crianças e adultos de todas as idades e tem uma história incrível que remonta a mais de 80 anos.
@@ -258,10 +261,10 @@
                     <h1>Douglas</h1>
                     <p>"O MySQL te diz como ter os melhores amigos, só fazer uma lista na tabela e as relações ele cria."</p>
                     <a target="_blank" href="https://github.com/dougandra">
-                        <img class="icon" src="./src/assets/images/github.svg" width="30px">
+                        <img class="icon" src="./src/assets/images/svg/github.svg" width="30px">
                     </a>
                     <a target="_blank" href="https://www.linkedin.com/in/douglasandradez/">
-                        <img class="icon" src="./src/assets/images/linkedin.svg" width="30px">
+                        <img class="icon" src="./src/assets/images/svg/linkedin.svg" width="30px">
                     </a>
                 </span>
             
@@ -270,10 +273,10 @@
                     <h1>Eliane</h1>
                     <p>"TABELAS, TABELAS, TABELAS AAAA!!!" </br>🤯🤯</p>
                     <a target="_blank" href="https://github.com/ElianeCristina">
-                        <img class="icon" src="./src/assets/images/github.svg" width="30px">
+                        <img class="icon" src="./src/assets/images/svg/github.svg" width="30px">
                     </a>
                     <a target="_blank" href="https://www.linkedin.com/in/eliane-cristina-nunes-correia/">
-                        <img class="icon" src="./src/assets/images/linkedin.svg" width="30px">
+                        <img class="icon" src="./src/assets/images/svg/linkedin.svg" width="30px">
                     </a>
                 </span>
             
@@ -282,10 +285,10 @@
                     <h1>Gabriel</h1>
                     <p>"Meu primo roubou meu lego Minecraft" </br>:(</p>
                     <a target="_blank" href="https://github.com/C836">
-                        <img class="icon" src="./src/assets/images/github.svg" width="30px">
+                        <img class="icon" src="./src/assets/images/svg/github.svg" width="30px">
                     </a>
                     <a target="_blank" href="https://www.linkedin.com/in/gabriel-lopes8/">
-                        <img class="icon" src="./src/assets/images/linkedin.svg" width="30px">
+                        <img class="icon" src="./src/assets/images/svg/linkedin.svg" width="30px">
                     </a>
                 </span>
             </div>
@@ -295,10 +298,10 @@
                     <h1>Jessica</h1>
                     <p>"Mais complexo que as peças do Taj Mahal, mais histórico que o set Big Ben, me aventurar no MySQL foi."</p>
                     <a target="_blank" href="https://github.com/Jessaint">
-                        <img class="icon" src="./src/assets/images/github.svg" width="30px">
+                        <img class="icon" src="./src/assets/images/svg/github.svg" width="30px">
                     </a>
                     <a target="_blank" href="https://www.linkedin.com/in/jessicasjesus/">
-                        <img class="icon" src="./src/assets/images/linkedin.svg" width="30px">
+                        <img class="icon" src="./src/assets/images/svg/linkedin.svg" width="30px">
                     </a>
                 </span>
             
@@ -307,10 +310,10 @@
                     <h1>Victor</h1>
                     <p>"Beba água"</p>
                     <a target="_blank" href="https://github.com/victorb26">
-                        <img class="icon" src="./src/assets/images/github.svg" width="30px">
+                        <img class="icon" src="./src/assets/images/svg/github.svg" width="30px">
                     </a>
                     <a target="_blank" href="https://www.linkedin.com/in/victorjcbarros/">
-                        <img class="icon" src="./src/assets/images/linkedin.svg" width="30px">
+                        <img class="icon" src="./src/assets/images/svg/linkedin.svg" width="30px">
                     </a>
                 </span>
             </div>
@@ -320,32 +323,37 @@
     <div class="Border borderDown"></div>
 
     <footer>
-        <img src="./src/assets/images/logo.svg" width="120px">
+        <span>
+            <img src="./src/assets/images/svg/logo.svg" width="120px">
+        </span>
 
-        <ul>
-           <li>Inicio</li>
-           <li>Sobre</li>
-           <li>1</li> 
-           <li>2</li>
-           <li>3</li>
-           <li>Equipe</li>
-        </ul>
-
-        <ul>
-            <li>Database</li>
-            <li>Tabelas</li>
-            <li>1</li>
+        <div>
+            <ul>
+            <li>Inicio</li>
+            <li>Sobre</li>
+            <li>1</li> 
             <li>2</li>
             <li>3</li>
-        </ul>
             <li>Equipe</li>
-            <li>Douglas Andrade</li>
-            <li>Eliane Christina</li>
-            <li>Gabriel Lopes</li>
-            <li>Jessica Santos</li>
-            <li>Victor Barros</li>
-        <ul>
-        
+            </ul>
+
+            <ul>
+                <li>Database</li>
+                <li>Tabelas</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+
+            <ul>
+                <li>Equipe</li>
+                <li>Douglas Andrade</li>
+                <li>Eliane Christina</li>
+                <li>Gabriel Lopes</li>
+                <li>Jessica Santos</li>
+                <li>Victor Barros</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

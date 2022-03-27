@@ -20,15 +20,16 @@ nav .navLogo{
     margin: 10px 30px 10px 30px;
 }
 
-nav #right{
+nav .right{
     float: right;
     margin-right: 30px;
 }
 
 nav .search{
+    position: absolute;
     outline: none;
     background: white;
-    float: left;
+    transform: translateX(-100%);
     margin-top: 15px;
     border: none;
     padding: 10px 15px;
@@ -51,4 +52,56 @@ nav .searchButton{
 nav .searchButton img{
     width: 50%;
     margin-top: 10px;
+}
+
+nav .openMenu{
+    margin-top: 19px;
+    display: none;
+}
+
+@media (max-width: 850px){
+    nav{
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .openMenu{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    nav .right{
+        float: none;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    nav a, nav .right *{
+        align-self: center;
+        padding: 13px 0;
+    }
+
+    nav .right a:last-of-type{
+        margin-bottom: 10px;
+    }
+
+    nav .searchButton{
+        margin: 0;
+        order: 5;
+        margin-bottom: 20px;
+    }
+
+    nav .searchButton img{
+        width: 50%;
+        margin-top: -15px;
+    }   
+
+    nav .search{
+        transform: translate(-10%, 205%);
+        padding: 10px 15px;
+    }
 }
