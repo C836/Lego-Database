@@ -59,7 +59,7 @@ nav .openMenu{
     display: none;
 }
 
-@media (max-width: 850px){
+@media (max-width: 881px){
     nav{
         height: 75px;
         display: flex;

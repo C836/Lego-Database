@@ -6,16 +6,14 @@ $(window).on('resize', ()=>{
     normal()
 });
 
-$("#navbar").click((event)=>{
+$("#openMenu").click((event)=>{
     $("nav").css("height","auto");
-    $("nav").css("position","fixed");
-    $("nav").css("z-index","99");
-    $("#main").css("padding-top","75px");
+    $("#Border").hide()
     event.stopPropagation();
 });
 
 function normal(){
-$("nav").css("height","75px")
-$("nav").css("position","static");
-$("#main").css("padding-top","0");
+    $("nav").css("height","75px")
+    $("#Border").show()
+    $("#border")
 }

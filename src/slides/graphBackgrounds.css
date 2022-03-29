@@ -1,9 +1,13 @@
 .first1{
-    background-image: url("./../assets/images/slide-backgrounds/first1.jpg");
+    background-image: url("./../assets/images/slide-backgrounds/biggest.jpg");
 }
 
 .first2{
     background-image: url("./../assets/images/slide-backgrounds/smallest.jpg");
+}
+
+.first3{
+    background-image: url("./../assets/images/slide-backgrounds/oldestSets.jpg");
 }
 
 .sec1{
@@ -20,4 +24,12 @@
 
 .third1{
     background-image: url("./../assets/images/slide-backgrounds/marvelvsdc.jpg")
+}
+
+.third2{
+    background-image: url("./../assets/images/slide-backgrounds/technic.webp")
+}
+
+.third3{
+    background-image: url("./../assets/images/slide-backgrounds/trueSets.jpg")
 }
