@@ -1,7 +1,4 @@
-#3. Top 10 vintage minifigure:
-
-select name, year
-from sets
-where name like '%vintage minifigure%'
-group by name
-order by year asc limit 10;
+# Top 5 temas mais usados nos anos 80
+select distinct themes.name as "Temas", count(sets.theme_id) as "Total", year as "Ano"from themes
+inner join sets on themes.id = sets.theme_id where year between "1980" and "1989" 
+group by theme_id having count(sets.theme_id)> 08 order by total desc limit 5;
