@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300&display=swap');
+
+.databaseBackground{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+    z-index: -99;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%
+}
+
+.diagrama{
+    width: 90%;
+}
+
+section{
+    color: white;
+    margin: 45px;
+}
+
+section *{
+    align-self: center;
+}
+
+section div{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: 'M PLUS 1 Code', sans-serif;
+    padding: 20px;
+    text-align: left;
+    line-height: 28px;
+    width: 350px;
+    border: 1px white solid;
+    border-radius: 20px;
+}

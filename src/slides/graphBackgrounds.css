@@ -1,0 +1,23 @@
+.first1{
+    background-image: url("./../assets/images/slide-backgrounds/first1.jpg");
+}
+
+.first2{
+    background-image: url("./../assets/images/slide-backgrounds/smallest.jpg");
+}
+
+.sec1{
+    background-image: url("./../assets/images/slide-backgrounds/top5star.jpg");
+}
+
+.sec2{
+    background-image: url("./../assets/images/slide-backgrounds/top5harry.jpg");
+}
+
+.sec3{
+    background-image: url("./../assets/images/slide-backgrounds/top5batman.jpg");
+}
+
+.third1{
+    background-image: url("./../assets/images/slide-backgrounds/marvelvsdc.jpg")
+}

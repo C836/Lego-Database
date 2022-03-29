@@ -23,18 +23,6 @@
     background-size: cover;
 }
 
-.first{
-    background-image: url("./../assets/images/slide-backgrounds/2.jpg");
-}
-
-.second{
-    background-image: url("./../assets/images/slide-backgrounds/3.jpg");
-}
-
-.third{
-    background-image: url("./../assets/images/slide-backgrounds/1.jpg");
-}
-
 .carousel-item div {
     height: 600px;
     display: flex;

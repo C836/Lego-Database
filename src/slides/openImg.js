@@ -8,6 +8,6 @@ $(window).click(function(e) {
 }); 
 
 function openImg(num){
-    $("#imgViewerSrc").attr("src",`./src/assets/graphs/grafico${num}.png`);
+    $("#imgViewerSrc").attr("src",`./src/assets/graphs/${num}`);
     $("#imgViewer").show()
 }
