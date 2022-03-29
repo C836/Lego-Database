@@ -1,6 +1,6 @@
 .Border{
     position: absolute;
-    z-index: 99;
+    z-index: 50;
     background: url("../assets/images/border.png") repeat-x;
     background-size: 800px;
     height: 100px;
@@ -18,7 +18,7 @@
 
 .slides {
     width: 100%;
-    height: 700px;
+    height: 600px;
     position: relative;
     margin: 200px 0;
 }
@@ -29,4 +29,22 @@
 
 .slides-3{
     margin: 0 0;
+}
+
+@media (max-width: 970px){
+    .borderUp{
+        top: 800px
+    }
+}
+
+@media (max-width: 650px){
+    .borderUp{
+        top: 682px
+    }
+}
+
+@media (max-width: 430px){
+    .borderUp{
+        top: 614px
+    }
 }
