@@ -1,7 +1,7 @@
-#3. Top 10 vintage minifigure com menor numero de peças:
+#3. AS coleções de vintage minifigure:
 
 select name, year, num_parts
 from sets
 where name like '%vintage minifigure%'
 group by name
-order by num_parts asc limit 10;
+order by year asc limit 5;
