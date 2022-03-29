@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <script src="../navbar/search.js" defer></script>
     <script src="../navbar/navbar.js" defer></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../master.css">
     <link rel="stylesheet" href="../navbar/navbar.css">
@@ -21,10 +29,11 @@
     <link rel="stylesheet" href="../footer/footer.css">
     <title>Lego Database</title>
 </head>
+
 <body>
     <img class="databaseBackground" src="../assets/images/backgroundDatabase.jpg">
 
-    <nav id="navbar"> 
+    <nav id="navbar">
         <img class="navLogo" src="../assets/images/svg/logo.svg">
         <a>
             TEXTO
@@ -38,7 +47,8 @@
         <div id="right" class="right">
             <input type="text" id="SearchTxt" class="search" value placeholder="Search">
 
-            <div class="searchButton" id="SearchBtn" value="Search" onclick="doSearch(document.getElementById('SearchTxt').value)">
+            <div class="searchButton" id="SearchBtn" value="Search"
+                onclick="doSearch(document.getElementById('SearchTxt').value)">
                 <img src="../assets/images/svg/search.svg">
             </div>
 
@@ -56,60 +66,103 @@
     <main>
         <img class="diagrama" id="diagrama" src="./Diagrama_Lego.png">
 
-        <section id="queries">
-            <h1>#1 Pergunta tal</h1>
+        <section>
+            <h1>#Query 1:</h1>
             <div>
                 select name as "Nome do Set ",</br>
-                year as "Ano Lançamento" </br>
-                from sets </br>
-                order by num_parts </br>
-                desc limit 10 </br>
+                year as "Ano Lançamento"from sets </br>
+                order by num_parts desc limit 10;</br>
             </div>
         </section>
 
         <section>
-            <h1>#1 Pergunta tal</h1>
+            <h1>#Query 2:</h1>
             <div>
-                select name as "Nome do Set ",</br>
-                year as "Ano Lançamento" </br>
-                from sets </br>
-                order by num_parts </br>
-                desc limit 10 </br>
+                select part_categories.name as "Categorias", sum(quantity) as "Total" </br>
+                from parts inner join inventory_parts using(part_num) </br>
+                inner join part_categories on parts.part_cat_id = part_categories.id </br>
+                group by part_cat_id having sum(quantity) < 11 order by total desc; </br>
+
             </div>
         </section>
 
         <section>
-            <h1>#1 Pergunta tal</h1>
+            <h1>#Query 3</h1>
             <div>
-                select name as "Nome do Set ",</br>
-                year as "Ano Lançamento" </br>
+                select name, year </br>
                 from sets </br>
-                order by num_parts </br>
-                desc limit 10 </br>
+                order by year asc limit 10; </br>
+
             </div>
         </section>
 
         <section>
-            <h1>#1 Pergunta tal</h1>
+            <h1>#Query 4</h1>
             <div>
-                select name as "Nome do Set ",</br>
-                year as "Ano Lançamento" </br>
+                select name, num_parts as quantidade, year </br>
                 from sets </br>
-                order by num_parts </br>
-                desc limit 10 </br>
+                where name like '%Star War%' </br>
+                order by quantidade > 100 desc limit 10; </br>
             </div>
         </section>
 
         <section>
-            <h1>#1 Pergunta tal</h1>
+            <h1>#Query 5</h1>
             <div>
-                select name as "Nome do Set ",</br>
-                year as "Ano Lançamento" </br>
-                from sets </br>
+                select name, num_parts </br>
+                from sets where name like '%Harry Potter%' </br>
                 order by num_parts </br>
-                desc limit 10 </br>
+                desc limit 5; </br>
+            </div>
+        </section>
+
+        <section>
+            <h1>#Query 6</h1>
+            <div>
+                SELECT sets.name,sets.year , sets.num_parts </br>
+                FROM sets INNER JOIN themes </br>
+                ON sets.theme_id = themes.id </br>
+                WHERE themes.name LIKE %batman% AND sets.num_parts > 500 </br>
+                ORDER BY num_parts DESC LIMIT 5; </br>
+            </div>
+        </section>
+
+        <section>
+            <h1>#Query 7</h1>
+            <div>
+                select name, case when </br>
+                name like '%DC%' Then'Herois DC ' </br>
+                when </br>
+                name like '%Marvel%' then 'Herois Marvel' </br>
+                END AS Herois_LEGO </br>
+                FROM sets order by Herois_LEGO desc limit 137;</br>
+            </div>
+        </section>
+
+        <section>
+            <h1>#Query 8</h1>
+            <div>
+                select distinct themes.name as "Temas", count(sets.theme_id) as "Total", </br>
+                year as "Ano"from themes </br>
+                inner join sets on themes.id = sets.theme_id </br>
+                where year between "1980" and "1989" </br>
+                group by theme_id having count(sets.theme_id)> 08 </br>
+                order by total desc limit 5; </br>
+
+            </div>
+        </section>
+
+        <section>
+            <h1>#Query 9</h1>
+            <div>
+                select name as "Nome", num_parts as "Qtd Peças", case </br>
+                when num_parts >= 4000 then 'Sim'</br>
+                when num_parts < 4000 then 'Não' </br>
+                    end as 'True Set' from sets group by set_num </br>
+                    order by num_parts desc limit 20; </br>
             </div>
         </section>
     </main>
 </body>
+
 </html>
