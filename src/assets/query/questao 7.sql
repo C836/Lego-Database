@@ -1,6 +1,6 @@
-#2. Top 10 classic collection:
+#2. Top 5 Collections mais antigas:
 
 select name, year
 from sets
-where name like '%collection'
-order by year asc limit 10;
+where name like '%collection%'
+order by year asc limit 5;
