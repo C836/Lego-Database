@@ -1,6 +1,6 @@
-#4. Top 10 Star Wars com mais de 100 peças:
-
-select name, num_parts as quantidade, year
-from sets
-where name like '%Star War%'
-order by quantidade > 100 desc limit 10;
+#Top 10 maiores sets: Quais são True set / Quais não são?
+select name as "Nome", num_parts as "Qtd Peças", case
+when num_parts >= 4000 then 'Sim'
+when num_parts < 4000 then 'Não'
+end as 'True Set' from sets group by set_num
+order by num_parts desc limit 20;
