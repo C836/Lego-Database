@@ -58,5 +58,14 @@
     .carousel-item div div span {
         display: none;
     }
+
+    .carousel-item div div{
+        width: 80%;
+    }
+
+    .graphImg{
+        width: 100%;
+        object-fit: contain;
+    }
 }
 

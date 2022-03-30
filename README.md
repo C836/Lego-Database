@@ -1,4 +1,4 @@
-# PROJETO FINAL  MÓDULO 3  -  RESILIA 
+# Lego Database
 
 
 
@@ -8,9 +8,7 @@
 
 ## Introdução
 
-Projeto final Módulo 3 de banco de dados através da Formação em Desenvolvimento Web Fullstack Resilia Educação, com foco em pesquisa de dados da LEGO, buscando a abstração das informações fornecidas e criação de um ambiente de exploração pelo MySQL. Em todas as fases de desenvolvimento, foi buscado desenvolver uma estruturação de maneira assertiva, tendo em vista a precisão dos dados e clareza das atividades ali dispostas pela equipe.
-
-
+Projeto final do Módulo 3 de banco de dados através da Formação em Desenvolvimento Web Fullstack Resilia Educação, com foco em pesquisa de dados da LEGO, buscando a abstração das informações fornecidas e criação de um ambiente de exploração pelo MySQL. Em todas as fases de desenvolvimento, foi buscado desenvolver uma estruturação de maneira assertiva, tendo em vista a precisão dos dados e clareza das atividades ali dispostas pela equipe.
 
 ##  **Etapas de desenvolvimento do projeto:**
 
@@ -23,13 +21,6 @@ Projeto final Módulo 3 de banco de dados através da Formação em Desenvolvime
 - [x] Desenvolvimento do site com tema LEGO para apresentação das informações gerais obtidas;
 
   
-
-
-
-##  🔎 Imagens:
-
-
-
 
 
 
@@ -56,7 +47,7 @@ Projeto final Módulo 3 de banco de dados através da Formação em Desenvolvime
 
 
 
-###                    Top 10: Ranking dos Maiores Sets e Seus Respectivos Anos de Lançamento:
+###                    Top 8: Sets com mais peças
 
 
 
@@ -64,7 +55,7 @@ Projeto final Módulo 3 de banco de dados através da Formação em Desenvolvime
 
 ​                           
 
-###                   Top 10: Categorias que Possuem Menos de  10 Peças Disponíveis no inventário:
+###                   Top 6: Menores sets de todos os tempos
 
 
 
@@ -72,11 +63,18 @@ Projeto final Módulo 3 de banco de dados através da Formação em Desenvolvime
 
 ​    
 
-###                  Sets Mais Antigos:
+###                  Primeiros sets da história
 
 ​                      ![](https://cdn.discordapp.com/attachments/924683760631431271/958492693447725086/3.JPG)
 
 ###                 
+
+### Top 10: Star Wars com Mais de 100 Peças:
+
+
+
+![](https://cdn.discordapp.com/attachments/924683760631431271/958492694710210610/8.JPG)
+
 
 ###                  Sets Harry Potter com Maiores Quantidades de Peças:
 
@@ -84,9 +82,17 @@ Projeto final Módulo 3 de banco de dados através da Formação em Desenvolvime
 
 ![](https://cdn.discordapp.com/attachments/924683760631431271/958492693657423912/4.JPG)
 
-###            
 
-###                   Agrupamento dos Heróis Marvel e DC:
+### Top 5: Sets do Batman com Mais Peças:
+
+
+
+![](https://cdn.discordapp.com/attachments/924683760631431271/958492694957686824/9.JPG)
+
+
+            
+
+###                   Superheroes - Marvel vs DC:
 
 
 
@@ -102,29 +108,11 @@ Projeto final Módulo 3 de banco de dados através da Formação em Desenvolvime
 
 
 
-###                  Top 10: Maiores Sets - Quais São True Set / Quais Não São?
+###                  Top 12: Maiores Sets - Quais São True Set / Quais Não São?
 
 ​                        
 
 ​             ![](https://cdn.discordapp.com/attachments/924683760631431271/958492694513070141/7.JPG)             
-
-
-
-### Top 10: Star Wars com Mais de 100 Peças:
-
-
-
-![](https://cdn.discordapp.com/attachments/924683760631431271/958492694710210610/8.JPG)
-
-
-
-### Top 5: Sets do Batman com Mais Peças:
-
-
-
-![](https://cdn.discordapp.com/attachments/924683760631431271/958492694957686824/9.JPG)
-
-
 
 
 

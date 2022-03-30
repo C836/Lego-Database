@@ -15,5 +15,4 @@ $("#openMenu").click((event)=>{
 function normal(){
     $("nav").css("height","75px")
     $("#Border").show()
-    $("#border")
 }
